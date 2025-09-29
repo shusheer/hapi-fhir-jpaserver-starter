@@ -427,6 +427,10 @@ hapi:
     #      requests_enabled: true
     #      responses_enabled: true
     #    binary_storage_enabled: true
+    #    binary_storage_mode: FILESYSTEM
+    #    binary_storage_filesystem_base_directory: /binstore
+    # When binary_storage_mode is FILESYSTEM and this value is not set,
+    # the starter defaults to 102400 bytes so smaller binaries stay inline.
     inline_resource_storage_below_size: 4000
 #    bulk_export_enabled: true
 #    subscription:
